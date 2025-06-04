@@ -83,7 +83,7 @@ jobs:
       - name: Enable the permission for bin/rails
         run: chmod +x bin/rails
       - name: Enable the permission for db
-        run: rails/db:migrate
+        run: bin/rails db:migrate
 
       - name: Run tests
         env:
