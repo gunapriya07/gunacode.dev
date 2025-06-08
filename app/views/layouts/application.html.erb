@@ -23,6 +23,14 @@
   </head>
 
   <body>
+    <!-- app/views/layouts/application.html.erb -->
+<nav>
+  <%= link_to "Home", root_path %> |
+  <%= link_to "About", about_path %> |
+  <%= link_to "Projects", projects_path %> |
+  <%= link_to "Contact", contact_path %>
+</nav>
+
     <%= yield %>
   </body>
 </html>
